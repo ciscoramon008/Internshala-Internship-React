@@ -1,10 +1,15 @@
 import React from 'react'
 import './SidebarNav.css'
+import SidebarNavItemContainer from './SidebarNavItemContainer'
+import UpgradeProItem from './UpgradeProItem'
+import UserInfo from './UserInfo'
 
 const SidebarNav = () => {
     return (
         <div className='sidebar-container'>
-            <h1>Sidebar</h1>
+            <UserInfo />
+            <SidebarNavItemContainer />
+            <UpgradeProItem />
         </div>
     )
 }

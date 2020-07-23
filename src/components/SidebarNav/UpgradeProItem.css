@@ -1,0 +1,16 @@
+.upgrade-pro-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(128, 0, 128, 0.1);
+    padding: 1rem 0;
+}
+
+.upgrade-pro-container img {
+    width: 5rem;
+}
+
+.upgrade-pro-container h6 {
+    text-align: center;
+    font-size: 0.9rem;
+}
