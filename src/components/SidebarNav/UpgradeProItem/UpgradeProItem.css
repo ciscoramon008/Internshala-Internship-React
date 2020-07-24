@@ -6,11 +6,16 @@
     padding: 1rem 0;
 }
 
+.upgrade-pro-container h5 {
+    text-align: center;
+    font-size: large;
+}
+
 .upgrade-pro-container img {
     width: 5rem;
 }
 
 .upgrade-pro-container h6 {
     text-align: center;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
 }

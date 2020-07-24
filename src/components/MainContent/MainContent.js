@@ -1,10 +1,11 @@
 import React from 'react'
 import './MainContent.css'
+import TopRow from './TopRow/TopRow'
 
 function MainContent() {
     return (
         <div className='main-container'>
-            <h1>Main Content</h1>
+            <TopRow />
         </div>
     )
 }

@@ -4,8 +4,7 @@ import './SidebarNavItem.css'
 const SidebarNavItem = ({ text, icon }) => {
     return (
         <div className='sidebar-nav-item'>
-            <div className='sidebar-icon-container mr-2'>{icon}</div>
-            <div className='sidebar-nav-item-text'>{text}</div>
+            <div>{icon} <span className='ml-1 sidebar-nav-item-text'>{text}</span></div>
         </div>
     )
 }

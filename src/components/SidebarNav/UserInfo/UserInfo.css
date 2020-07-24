@@ -1,0 +1,14 @@
+.user-info-container img {
+    width: 4rem;
+}
+
+.user-info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0.5rem;
+}
+
+.user-info-name {
+    font-size: 1.1rem;
+}

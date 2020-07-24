@@ -1,0 +1,12 @@
+.info-card img {
+    width: 4rem;
+    margin-right: 1rem;
+}
+
+.info-card {
+    width: 25rem;
+}
+
+.info-card div h6{
+    font-size: medium;
+}

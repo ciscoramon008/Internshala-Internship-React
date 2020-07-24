@@ -1,9 +1,8 @@
 .sidebar-nav-item {
-    display: flex;
-    align-items: center;
-    margin: 1.2rem 0;
+    margin: 1rem 0;
 }
 
-.sidebar-nav-item-text {
-    font-size: 1.1rem;
+.sidebar-nav-item div {
+    display: flex;
+    align-items: flex-end;
 }
