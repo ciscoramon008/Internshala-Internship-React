@@ -4,7 +4,7 @@ import TopRow from './TopRow/TopRow'
 
 function MainContent() {
     return (
-        <div className='main-container'>
+        <div className='main-container h-100'>
             <TopRow />
         </div>
     )

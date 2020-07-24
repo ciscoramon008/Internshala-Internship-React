@@ -1,22 +1,22 @@
 import React from 'react'
-import { BsArrowDown } from "react-icons/bs"
 import './InfoCard.css'
+import InfoCardSub from './InfoCardSub'
 
-const InfoCard = () => {
+const InfoCard = ({ details }) => {
     return (
-        <div className='card info-card flex-row'>
-            <div className='card-body p-3'>
-                <h6>BUDGET</h6>
-                <h4>$24,000</h4>
-                <div className='pt-3'>
-                    <h6>
-                        <BsArrowDown color='red' size='1.5rem' />12% <span className='ml-2'>Just Some Text</span>
-                    </h6>
-                </div>
+        <div className={`card info-card flex-row h-100 mx-2`} style={{background: details.background, color: details.color}}>
+            <div className='card-body p-2'>
+                <h6>{details.cardTitle}</h6>
+                <h5>{details.cardText}</h5>
+                {details.cardSubIcon ? (
+                    <InfoCardSub icon={details.cardSubIcon} text={details.cardSubText} line={details.cardLineText} />
+                ) : (
+                    <h4>Hello</h4>
+                )}
             </div>
             <img
                 className='img-fluid'
-                src='https://image.flaticon.com/icons/svg/1211/1211547.svg'
+                src={details.cardIcon}
                 alt='budget'
             />
         </div>
