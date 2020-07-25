@@ -3,19 +3,19 @@ import { Bar } from 'react-chartjs-2'
 
 function BarChart() {
     const data = {
-        labels: ['Jan', 'Feb', 'March', 'April', 'May'],
+        labels: ['19 July', '20 July', '21 July', '22 July', '23 July', '24 July'],
         datasets: [
             {
-                label: 'Sales for 2020 (M)',
-                data: [3, 2, 2, 1, 5],
+                label: 'Sales',
+                data: [17, 4, 18, 27, 28, 17],
                 backgroundColor: 'blue',
                 barThickness: 10,
                 // barPercentage: 0.6,
                 // categoryPercentage: 0.2
             },
             {
-                label: 'Sales for 2019 (M)',
-                data: [2, 3, 1, 5, 4],
+                label: 'Sales',
+                data: [12, 20, 11, 28, 29, 25],
                 backgroundColor: 'lightgray',
                 barThickness: 10,
                 // barPercentage: 0.6,
@@ -30,18 +30,24 @@ function BarChart() {
         },
         scales: {
             yAxes: [{
+                gridLines: {
+                    drawBorder: false,
+                },
                 ticks: {
                     min: 0,
-                    max: 6,
-                    stepSize: 1,
-                }
+                    max: 30,
+                    stepSize: 5,
+                },
             }],
+            xAxes: [{
+                gridLines: {
+                    display: false,
+                }
+            }]
         }
     }
 
-    return (
-        <Bar data={data} options={options} />
-    )
+    return <Bar data={data} options={options} />
 }
 
 export default BarChart

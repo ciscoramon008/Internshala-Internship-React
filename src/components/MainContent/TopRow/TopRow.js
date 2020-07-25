@@ -37,7 +37,7 @@ const infoCards = [
 function TopRow() {
     return (
         <div className='row no-gutters pt-5'>
-            {infoCards.map(card => <div className='col-md-3'><InfoCard details={card}/></div>)}
+            {infoCards.map(card => <div className='col-xl-3 col-md-6 mb-2'><InfoCard details={card}/></div>)}
         </div>
     )
 }

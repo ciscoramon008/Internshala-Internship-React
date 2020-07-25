@@ -1,8 +1,7 @@
-.info-card img {
-    width: 4rem;
-    margin-right: 1rem;
+.info-card-img {
+    width: 3.2rem;
 }
 
-.info-card div h6{
-    font-size: small;
+.info-card-title {
+    font-size: 0.9rem;
 }
