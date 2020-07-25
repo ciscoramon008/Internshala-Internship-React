@@ -17,13 +17,22 @@ const InfoCard = ({ details }) => {
                         alt='budget'
                     />
                 </div>
-                {details.cardSubIcon ? (
+                {details.subCard && (
                     <InfoCardSub icon={details.cardSubIcon} text={details.cardSubText} line={details.cardLineText} />
-                ) : (
-                    <h4>Hello</h4>
+                )}
+                {details.progressBar && (
+                    <div class="progress mt-3" style={{ height: '0.5rem' }}>
+                        <div
+                            class="progress-bar"
+                            role="progressbar"
+                            style={{ width: `${details.progressPercentage}%`}}
+                            aria-valuenow={details.progressPercentage}
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                        />
+                    </div>
                 )}
             </div>
-            
         </div>
     )
 }

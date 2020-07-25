@@ -7,11 +7,11 @@ const BarChartWrapper = () => {
             <div className='card-header d-flex justify-content-between align-items-center bg-white'>
                 <span>Latest Sales</span>
                 <div><span>LAST</span>
-                    <select className='ml-2'>
-                        <option selected>7 days</option>
-                        <option>7 weeks</option>
-                        <option>7 months</option>
-                        <option>7 years</option>
+                    <select className='ml-2' defaultValue='7 days'>
+                        <option value='7 days'>7 days</option>
+                        <option value='7 weeks'>7 weeks</option>
+                        <option value='7 months'>7 months</option>
+                        <option value='7 years'>7 years</option>
                     </select>
                 </div>
             </div>

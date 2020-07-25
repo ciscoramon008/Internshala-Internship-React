@@ -10,7 +10,7 @@ function UpgradeProItem() {
                 alt='upgrade-to-pro'
             />
             <h5>Upgrade to PRO</h5>
-            <h6>Upgrade to Devices Kit Pro and get even more components</h6>
+            <h6 className='px-1'>Upgrade to Devices Kit Pro and get even more components</h6>
             <button className='btn btn-md' style={{background: 'purple', color: 'white'}}>UPGRADE</button>
         </div>
     )

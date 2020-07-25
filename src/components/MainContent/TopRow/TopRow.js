@@ -8,6 +8,7 @@ const infoCards = [
         cardTitle: 'BUDGET',
         cardText: '$24,000',
         cardIcon: 'https://image.flaticon.com/icons/svg/1211/1211547.svg',
+        subCard: true,
         cardSubIcon: <BsArrowDown color='red' size='1.5rem' />,
         cardSubText: '12%',
         cardLineText: 'Just Some Text'
@@ -16,6 +17,7 @@ const infoCards = [
         cardTitle: 'TOTAL USERS',
         cardText: '1,600',
         cardIcon: 'https://image.flaticon.com/icons/svg/615/615075.svg',
+        subCard: true,
         cardSubIcon: <BsArrowUp color='green' size='1.5rem' />,
         cardSubText: '18%',
         cardLineText: 'Just Some Text'
@@ -24,12 +26,16 @@ const infoCards = [
         cardTitle: 'TASKS PROGRESS',
         cardText: '75%',
         cardIcon: 'https://image.flaticon.com/icons/svg/3094/3094918.svg',
+        subCard: false,
+        progressBar: true,
+        progressPercentage: 75
     },
     {
         cardTitle: 'TOTAL PROFIT',
         cardText: '$23,200',
         cardIcon: 'https://image.flaticon.com/icons/svg/985/985698.svg',
-        background: 'purple',
+        subCard: false,
+        background: 'blue',
         color: 'white'
     }
 ]
@@ -37,7 +43,7 @@ const infoCards = [
 function TopRow() {
     return (
         <div className='row no-gutters pt-5'>
-            {infoCards.map(card => <div className='col-xl-3 col-md-6 mb-2'><InfoCard details={card}/></div>)}
+            {infoCards.map(card => <div className='col-xl-3 col-md-6 mb-2' key={card.cardTitle}><InfoCard details={card} /></div>)}
         </div>
     )
 }

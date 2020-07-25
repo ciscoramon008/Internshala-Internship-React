@@ -1,0 +1,11 @@
+.product-name {
+    font-size: 1.1rem;
+}
+
+.product-updated-timestamp {
+    font-size: 0.9rem;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
