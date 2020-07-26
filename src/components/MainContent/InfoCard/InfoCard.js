@@ -1,6 +1,6 @@
 import React from 'react'
-import './InfoCard.css'
 import InfoCardSub from './InfoCardSub'
+import './InfoCard.css'
 
 const InfoCard = ({ details }) => {
     return (
@@ -11,19 +11,15 @@ const InfoCard = ({ details }) => {
                         <h6 className='info-card-title'>{details.cardTitle}</h6>
                         <h5>{details.cardText}</h5>
                     </div>
-                    <img
-                        className='img-fluid info-card-img'
-                        src={details.cardIcon}
-                        alt='budget'
-                    />
+                    {details.cardIcon}
                 </div>
                 {details.subCard && (
                     <InfoCardSub icon={details.cardSubIcon} text={details.cardSubText} line={details.cardLineText} />
                 )}
                 {details.progressBar && (
-                    <div class="progress mt-3" style={{ height: '0.5rem' }}>
+                    <div className="progress mt-3" style={{ height: '0.5rem' }}>
                         <div
-                            class="progress-bar"
+                            className="progress-bar"
                             role="progressbar"
                             style={{ width: `${details.progressPercentage}%`}}
                             aria-valuenow={details.progressPercentage}

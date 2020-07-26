@@ -8,14 +8,12 @@ function LatestOrderItem({ orderRef, customer, date, status }) {
         failed: 'red'
     }
     return (
-        <div className='row no-gutters p-3'>
-            <div className='col-3'><p className='m-0'>{orderRef}</p></div>
-            <div className='col-4'><p className='m-0'>{customer}</p></div>
-            <div className='col-2'><p className='m-0'>{date}</p></div>
-            <div className='col-3'><p className='m-0'>
-                <GoPrimitiveDot color={dotColor[`${status}`]} /><span className='ml-2'>{status}</span></p>
-            </div>
-        </div>
+        <tr>
+            <td>{orderRef}</td>
+            <td className='text-nowrap'>{customer}</td>
+            <td>{date}</td>
+            <td className='text-nowrap'><GoPrimitiveDot color={dotColor[`${status}`]} /><span className='ml-2'>{status}</span></td>
+        </tr>
     )
 }
 

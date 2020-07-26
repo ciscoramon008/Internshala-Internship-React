@@ -4,7 +4,7 @@ import { GrDropbox } from "react-icons/gr";
 import LatestProducts from './LatestProducts/LatestProducts'
 import LatestOrders from './LatestOrders/LatestOrders'
 
-function Orders() {
+const Orders = () => {
     const latestOrders = [
         {
             orderRef: '1CO90A25',
@@ -13,10 +13,16 @@ function Orders() {
             status: 'pending'
         },
         {
-            orderRef: '89GH55E',
+            orderRef: '89GH55EG',
             customer: 'Ronald Jobs',
             date: '09/05/19',
             status: 'success'
+        },
+        {
+            orderRef: 'RO02POLL',
+            customer: 'Joker DC',
+            date: '12/12/18',
+            status: 'failed'
         }
     ]
 
@@ -35,8 +41,8 @@ function Orders() {
 
     return (
         <div className='row no-gutters mt-4'>
-            <div className='col-lg-3'><LatestProducts latestProducts={latestProducts} /></div>
-            <div className='col-lg-9'><LatestOrders latestOrders={latestOrders} /></div>
+            <div className='my-2 col-12 col-md-5 col-xl-3'><LatestProducts latestProducts={latestProducts} /></div>
+            <div className='my-2 col-12 col-md-7 col-xl-9'><LatestOrders latestOrders={latestOrders} /></div>
         </div>
     )
 }

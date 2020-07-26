@@ -1,13 +1,17 @@
 import React from 'react'
 import { BsArrowDown } from 'react-icons/bs'
 import { BsArrowUp } from 'react-icons/bs'
+import { GiMoneyStack } from 'react-icons/gi';
+import { GiTreeGrowth } from 'react-icons/gi';
+import { FaUsers } from 'react-icons/fa';
+import { AiFillDollarCircle } from 'react-icons/ai';
 import InfoCard from '../InfoCard/InfoCard'
 
 const infoCards = [
     {
         cardTitle: 'BUDGET',
         cardText: '$24,000',
-        cardIcon: 'https://image.flaticon.com/icons/svg/1211/1211547.svg',
+        cardIcon: <div className='rounded-circle p-2 bg-danger'><GiMoneyStack size='2.5rem' color='white' /></div>,
         subCard: true,
         cardSubIcon: <BsArrowDown color='red' size='1.5rem' />,
         cardSubText: '12%',
@@ -16,7 +20,7 @@ const infoCards = [
     {
         cardTitle: 'TOTAL USERS',
         cardText: '1,600',
-        cardIcon: 'https://image.flaticon.com/icons/svg/615/615075.svg',
+        cardIcon: <div className='rounded-circle p-2 bg-success'><FaUsers size='2.5rem' color='white' /></div>,
         subCard: true,
         cardSubIcon: <BsArrowUp color='green' size='1.5rem' />,
         cardSubText: '18%',
@@ -25,7 +29,7 @@ const infoCards = [
     {
         cardTitle: 'TASKS PROGRESS',
         cardText: '75%',
-        cardIcon: 'https://image.flaticon.com/icons/svg/3094/3094918.svg',
+        cardIcon: <div className='rounded-circle p-2 bg-dark'><GiTreeGrowth size='2.5rem' color='white' /></div>,
         subCard: false,
         progressBar: true,
         progressPercentage: 75
@@ -33,7 +37,7 @@ const infoCards = [
     {
         cardTitle: 'TOTAL PROFIT',
         cardText: '$23,200',
-        cardIcon: 'https://image.flaticon.com/icons/svg/985/985698.svg',
+        cardIcon: <AiFillDollarCircle size='3.5rem' color='white' />,
         subCard: false,
         background: 'blue',
         color: 'white'
